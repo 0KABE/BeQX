@@ -1,0 +1,4 @@
+aiohttp
+emoji
+pyyaml
+flask
