@@ -7,6 +7,7 @@ Auto scripts for QuantumultX
 ## ToQX
 
 脚本将会将远程资源中的结点添加到预设的策略组中。
+而不必在每次修改后手动添加策略组
 
 Example: [DEMO](https://github.com/0KABE/BeQX/blob/dev/demo.json)
 
@@ -197,3 +198,10 @@ Example: [DEMO](https://github.com/0KABE/BeQX/blob/dev/demo.json)
     ]
 }
 ```
+
+URL: <https://API.OKAB3.COM/ToQX>
+
+| 参数     | 必须 | 描述         | 缺省值  |
+| :------- | :--- | :----------- | :-----: |
+| url      | 是   | 源文件地址   |         |
+| filename | 否   | 返回的文件名 | qx.conf |
