@@ -5,20 +5,24 @@ import requests
 from flask import Request, make_response
 
 import qx.policy as policy
+import qx.constant
 
 server_remote_options = ["tag", "enabled"]
 policy_options = ["img-url"]
 
 
 def to_qx(request: Request):
-    file_name: str = request.args.get("filename", "qx.conf")
+    file_name: str = request.args.get(
+        qx.constant.RequestParm.FILE_NAME.value, qx.constant.RequestParm.DEFAULT_FILE_NAME.value)
     ret: str = ""
-    conf: dict = json.loads(requests.get(request.args.get("url")).content.decode())
-    policy.add_server_remote(conf["policy"], conf["server_remote"])
+    conf: dict = json.loads(requests.get(request.args.get(
+        qx.constant.RequestParm.URL.value)).content.decode())
+    policy.add_server_remote(
+        conf[qx.constant.Conf.POLICY.value], conf[qx.constant.Conf.SERVER_REMOTE.value])
     for module_key in conf:
         ret += "\n[" + module_key+"]\n"
         module = conf[module_key]
-        if module_key == "policy":
+        if module_key == qx.constant.Conf.POLICY.value:
             for item_key in module:
                 item = module[item_key]
                 ret += str.format("{0} = {1}", item["type"], item_key)
@@ -29,7 +33,7 @@ def to_qx(request: Request):
                         ret += str.format(", {0}={1}",
                                           option, item[option])
                 ret += "\n"
-        elif module_key == "server_remote":
+        elif module_key == qx.constant.Conf.SERVER_REMOTE.value:
             for item in module:
                 ret += item["url"]
                 for option in item:
