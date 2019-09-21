@@ -30,10 +30,10 @@ class Parser(basic.Parser):
 
 
 class RemoteSubscription(basic.RemoteSubscription):
-    def download(self, url: str) -> list:
+    def _download(self, url: str) -> list:
         content: bytes = requests.get(self.url).content
         return content.decode().splitlines()
 
-    def node_names(self, data: list) -> list:
+    def _node_names(self, data: list) -> list:
         parser: Parser = Parser()
         return [parser.node_name(url) for url in data]
