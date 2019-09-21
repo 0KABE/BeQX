@@ -1,7 +1,9 @@
-import conf_parser.basic as basic
-import requests
-import urllib.parse
 import base64
+import urllib.parse
+
+import requests
+
+import conf_parser.basic as basic
 
 
 class Parser(basic.Parser):

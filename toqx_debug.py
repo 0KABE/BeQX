@@ -1,7 +1,5 @@
-import re
+from flask import Flask, request
 
-import requests
-from flask import Flask, Response, make_response, request
 from main import to_qx
 
 app = Flask(__name__)

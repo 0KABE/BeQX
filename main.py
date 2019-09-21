@@ -1,9 +1,10 @@
 import json
-import qx.policy as policy
 from enum import Enum
+
 import requests
 from flask import Request, make_response
 
+import qx.policy as policy
 
 server_remote_options = ["tag", "enabled"]
 policy_options = ["img-url"]
