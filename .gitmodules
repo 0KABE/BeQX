@@ -1,0 +1,3 @@
+[submodule "sub_parser"]
+	path = sub_parser
+	url = https://github.com/0KABE/sub_parser.git
