@@ -61,7 +61,7 @@ def _serialize(conf_json: dict) -> str:
                         option, item[option]) for option in item if option in server_remote_options)
                     serialized += "\n"
         finally:
-            serialized += "\n"
+            serialized += "\n\n"
     return serialized
 
 
