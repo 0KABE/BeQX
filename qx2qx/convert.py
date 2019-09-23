@@ -45,7 +45,7 @@ def _serialize(conf_json: dict) -> str:
         except ValueError:
             serialized += "\n".join(line for line in section)
         else:
-            if ConfSection(section_key) == ConfSection.POLICY:
+            if conf_section == ConfSection.POLICY:
                 for item_key in section:
                     item = section[item_key]
                     serialized += "{0}={1}".format(item["type"], item_key)
@@ -54,7 +54,7 @@ def _serialize(conf_json: dict) -> str:
                     serialized += "".join(", {0}={1}".format(
                         option, item[option]) for option in item if option in policy_options)
                     serialized += "\n"
-            elif ConfSection(section_key) == ConfSection.SERVER_REMOTE:
+            elif conf_section == ConfSection.SERVER_REMOTE:
                 for item in section:
                     serialized += item["url"]
                     serialized += "".join(", {0}={1}".format(
