@@ -32,23 +32,28 @@ Example: [DEMO](https://github.com/0KABE/BeQX/blob/dev/demo.json)
     "policy": {
         "Hong Kong": {
             "type": "available",
-            "policies": []
+            "policies": [],
+            "img-url": "https://raw.githubusercontent.com/zealson/Zure/master/IconSet/Hong_Kong.png"
         },
         "Taiwan": {
             "type": "available",
-            "policies": []
+            "policies": [],
+            "img-url": "https://raw.githubusercontent.com/zealson/Zure/master/IconSet/Taiwan.png"
         },
         "Japan": {
             "type": "available",
-            "policies": []
+            "policies": [],
+            "img-url": "https://raw.githubusercontent.com/zealson/Zure/master/IconSet/Japan.png"
         },
         "Singapore": {
             "type": "available",
-            "policies": []
+            "policies": [],
+            "img-url": "https://raw.githubusercontent.com/zealson/Zure/master/IconSet/Singapore.png"
         },
         "America": {
             "type": "available",
-            "policies": []
+            "policies": [],
+            "img-url": "https://raw.githubusercontent.com/zealson/Zure/master/IconSet/United_States.png"
         },
         "Others": {
             "type": "static",
@@ -130,15 +135,15 @@ Example: [DEMO](https://github.com/0KABE/BeQX/blob/dev/demo.json)
     },
     "server_remote": [
         {
-            "url": "http://remote1.com",
+            "url": "https://API.OKAB3.COM/filter?type=ssr&regex=%F0%9F%87%AD%F0%9F%87%B0&url=https%3A%2F%2FAPI.OKAB3.COM%2Femoji%3Ftype%3Dssr%26emoji%3Dhttps%3A%2F%2Fgist.githubusercontent.com%2F0KABE%2F7b88cfc4a94b4ea074aa509e15be117d%2Fraw%26url%3Dhttps%3A%2F%2Fsub.ssr.sh%2Flink%2FFdMu7sswP8Ho0Tbx%3Fmu%3D1",
             "tag": "Hong_Kong",
-            "type": "ssr",//远程资源类型：ss/ssr
-            "policies": [//需要将该远程资源中的节点添加至哪些策略组（目前的实现中策略组必须已经存在）支持多个策略组
+            "type": "ssr",
+            "policies": [
                 "Hong Kong"
             ]
         },
         {
-            "url": "http://remote2.com",
+            "url": "https://API.OKAB3.COM/filter?type=ssr&regex=.%2A%28%E5%8F%B0%E6%B9%BE%7C%E5%8F%B0%E5%8C%97%7C%E5%8F%B0%E4%B8%AD%7C%E6%96%B0%E5%8C%97%7C%E5%BD%B0%E5%8C%96%29&url=https%3A%2F%2FAPI.OKAB3.COM%2Femoji%3Ftype%3Dssr%26emoji%3Dhttps%3A%2F%2Fgist.githubusercontent.com%2F0KABE%2F7b88cfc4a94b4ea074aa509e15be117d%2Fraw%26url%3Dhttps%3A%2F%2Fsub.ssr.sh%2Flink%2FFdMu7sswP8Ho0Tbx%3Fmu%3D1",
             "tag": "Taiwan",
             "type": "ssr",
             "policies": [
@@ -146,7 +151,7 @@ Example: [DEMO](https://github.com/0KABE/BeQX/blob/dev/demo.json)
             ]
         },
         {
-            "url": "http://remote3.com",
+            "url": "https://API.OKAB3.COM/filter?type=ssr&regex=%F0%9F%87%AF%F0%9F%87%B5&url=https%3A%2F%2FAPI.OKAB3.COM%2Femoji%3Ftype%3Dssr%26emoji%3Dhttps%3A%2F%2Fgist.githubusercontent.com%2F0KABE%2F7b88cfc4a94b4ea074aa509e15be117d%2Fraw%26url%3Dhttps%3A%2F%2Fsub.ssr.sh%2Flink%2FFdMu7sswP8Ho0Tbx%3Fmu%3D1",
             "tag": "Japan",
             "type": "ssr",
             "policies": [
@@ -154,7 +159,7 @@ Example: [DEMO](https://github.com/0KABE/BeQX/blob/dev/demo.json)
             ]
         },
         {
-            "url": "http://remote4.com",
+            "url": "https://API.OKAB3.COM/filter?type=ssr&regex=%F0%9F%87%B8%F0%9F%87%AC&url=https%3A%2F%2FAPI.OKAB3.COM%2Femoji%3Ftype%3Dssr%26emoji%3Dhttps%3A%2F%2Fgist.githubusercontent.com%2F0KABE%2F7b88cfc4a94b4ea074aa509e15be117d%2Fraw%26url%3Dhttps%3A%2F%2Fsub.ssr.sh%2Flink%2FFdMu7sswP8Ho0Tbx%3Fmu%3D1",
             "tag": "Singapore",
             "type": "ssr",
             "policies": [
@@ -162,7 +167,7 @@ Example: [DEMO](https://github.com/0KABE/BeQX/blob/dev/demo.json)
             ]
         },
         {
-            "url": "http://remote5.com",
+            "url": "https://API.OKAB3.COM/filter?type=ssr&regex=%F0%9F%87%BA%F0%9F%87%B8&url=https%3A%2F%2FAPI.OKAB3.COM%2Femoji%3Ftype%3Dssr%26emoji%3Dhttps%3A%2F%2Fgist.githubusercontent.com%2F0KABE%2F7b88cfc4a94b4ea074aa509e15be117d%2Fraw%26url%3Dhttps%3A%2F%2Fsub.ssr.sh%2Flink%2FFdMu7sswP8Ho0Tbx%3Fmu%3D1",
             "tag": "America",
             "type": "ssr",
             "policies": [
@@ -171,13 +176,48 @@ Example: [DEMO](https://github.com/0KABE/BeQX/blob/dev/demo.json)
         }
     ],
     "filter_remote": [
-        "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Unbreak.list, tag=Unbreak, enabled=true, force-policy=Direct",
-        "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list, tag=Advertising, enabled=true, force-policy=Advertising",
-        "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list, tag=Hijacking, enabled=true, force-policy=Hijacking",
-        "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/ForeignMedia.list, tag=ForeignMedia, enabled=true, force-policy=Streaming",
-        "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/DomesticMedia.list, tag=DomesticMedia, enabled=true, force-policy=Bilibili&iQIYI",
-        "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Global.list, tag=Policy, enabled=true, force-policy=Policy",
-        "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/China.list, tag=Domestic, enabled=true, force-policy=Domestic"
+        {
+            "url": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Unbreak.list",
+            "tag": "Unbreak",
+            "enable": "true",
+            "force-policy": "Direct"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list",
+            "tag": "Advertising",
+            "enable": "true",
+            "force-policy": "Advertising"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list",
+            "tag": "Hijacking",
+            "enabled": "true",
+            "force-policy": "Hijacking"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/ForeignMedia.list",
+            "tag": "ForeignMedia",
+            "enabled": "true",
+            "force-policy": "Streaming"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/DomesticMedia.list",
+            "tag": "DomesticMedia",
+            "enabled": "true",
+            "force-policy": "Bilibili&iQIYI"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Global.list",
+            "tag": "Policy",
+            "enabled": "true",
+            "force-policy": "Policy"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/China.list",
+            "tag": "Domestic",
+            "enabled": "true",
+            "force-policy": "Domestic"
+        }
     ],
     "rewrite_remote": [
         "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Rewrite.conf, tag=Rewrite, enabled=true",
@@ -199,9 +239,20 @@ Example: [DEMO](https://github.com/0KABE/BeQX/blob/dev/demo.json)
 }
 ```
 
-URL: <https://API.OKAB3.COM/ToQX>
+URL: <https://API.OKAB3.COM/json2qx>
 
 | 参数     | 必须 | 描述         | 缺省值  |
 | :------- | :--- | :----------- | :-----: |
 | url      | 是   | 源文件地址   |         |
 | filename | 否   | 返回的文件名 | qx.conf |
+
+## ToClash
+
+支持将上述json配置文件转换为ClashR配置文件
+
+URL: <https://API.OKAB3.COM/json2clashr>
+
+| 参数     | 必须 | 描述         | 缺省值  |
+| :------- | :--- | :----------- | :-----: |
+| url      | 是   | 源文件地址   |         |
+| filename | 否   | 返回的文件名 | qx.yml |

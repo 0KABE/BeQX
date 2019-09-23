@@ -18,7 +18,7 @@ class RequestParm (Enum):
     FILE_NAME = "filename"
     URL = "url"
 
-    DEFAULT_FILE_NAME = "qx.yaml"
+    DEFAULT_FILE_NAME = "qx.yml"
 
 
 class ConfSection(Enum):
