@@ -157,13 +157,48 @@
         }
     ],
     "filter_remote": [
-        "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Unbreak.list, tag=Unbreak, enabled=true, force-policy=Direct",
-        "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list, tag=Advertising, enabled=true, force-policy=Advertising",
-        "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list, tag=Hijacking, enabled=true, force-policy=Hijacking",
-        "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/ForeignMedia.list, tag=ForeignMedia, enabled=true, force-policy=Streaming",
-        "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/DomesticMedia.list, tag=DomesticMedia, enabled=true, force-policy=Bilibili&iQIYI",
-        "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Global.list, tag=Policy, enabled=true, force-policy=Policy",
-        "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/China.list, tag=Domestic, enabled=true, force-policy=Domestic"
+        {
+            "url": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Unbreak.list",
+            "tag": "Unbreak",
+            "enable": "true",
+            "force-policy": "Direct"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Advertising.list",
+            "tag": "Advertising",
+            "enable": "true",
+            "force-policy": "Advertising"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Hijacking.list",
+            "tag": "Hijacking",
+            "enabled": "true",
+            "force-policy": "Hijacking"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/ForeignMedia.list",
+            "tag": "ForeignMedia",
+            "enabled": "true",
+            "force-policy": "Streaming"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/DomesticMedia.list",
+            "tag": "DomesticMedia",
+            "enabled": "true",
+            "force-policy": "Bilibili&iQIYI"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/Global.list",
+            "tag": "Policy",
+            "enabled": "true",
+            "force-policy": "Policy"
+        },
+        {
+            "url": "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Filter/China.list",
+            "tag": "Domestic",
+            "enabled": "true",
+            "force-policy": "Domestic"
+        }
     ],
     "rewrite_remote": [
         "https://raw.githubusercontent.com/ConnersHua/Profiles/master/Quantumult/X/Rewrite.conf, tag=Rewrite, enabled=true",

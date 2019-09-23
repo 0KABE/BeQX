@@ -10,6 +10,7 @@ from sub_parser.ss_sub_parser import SSNode
 from sub_parser.ssr_sub_parser import SSRNode
 
 server_remote_options = ["tag", "enabled"]
+filter_remote_options = ["tag", "enabled", "force-policy"]
 policy_options = ["img-url"]
 
 
@@ -23,6 +24,7 @@ class RequestParm (Enum):
 class ConfSection(Enum):
     POLICY = "policy"
     SERVER_REMOTE = "server_remote"
+    FILTER_REMOTE = "filter_remote"
 
 
 def convert(conf_url: str) -> str:
@@ -59,6 +61,12 @@ def _serialize(conf_json: dict) -> str:
                     serialized += item["url"]
                     serialized += "".join(", {0}={1}".format(
                         option, item[option]) for option in item if option in server_remote_options)
+                    serialized += "\n"
+            elif conf_section == ConfSection.FILTER_REMOTE:
+                for item in section:
+                    serialized += item["url"]
+                    serialized += "".join(", {0}={1}".format(
+                        option, item[option]) for option in item if option in filter_remote_options)
                     serialized += "\n"
         finally:
             serialized += "\n\n"
