@@ -18,23 +18,28 @@
     "policy": {
         "Hong Kong": {
             "type": "available",
-            "policies": []
+            "policies": [],
+            "img-url": "https://raw.githubusercontent.com/zealson/Zure/master/IconSet/Hong_Kong.png"
         },
         "Taiwan": {
             "type": "available",
-            "policies": []
+            "policies": [],
+            "img-url": "https://raw.githubusercontent.com/zealson/Zure/master/IconSet/Taiwan.png"
         },
         "Japan": {
             "type": "available",
-            "policies": []
+            "policies": [],
+            "img-url": "https://raw.githubusercontent.com/zealson/Zure/master/IconSet/Japan.png"
         },
         "Singapore": {
             "type": "available",
-            "policies": []
+            "policies": [],
+            "img-url": "https://raw.githubusercontent.com/zealson/Zure/master/IconSet/Singapore.png"
         },
         "America": {
             "type": "available",
-            "policies": []
+            "policies": [],
+            "img-url": "https://raw.githubusercontent.com/zealson/Zure/master/IconSet/United_States.png"
         },
         "Others": {
             "type": "static",
@@ -116,7 +121,7 @@
     },
     "server_remote": [
         {
-            "url": "http://remote1.com",
+            "url": "https://example.com",
             "tag": "Hong_Kong",
             "type": "ssr",
             "policies": [
@@ -124,7 +129,7 @@
             ]
         },
         {
-            "url": "http://remote2.com",
+            "url": "https://example.com",
             "tag": "Taiwan",
             "type": "ssr",
             "policies": [
@@ -132,7 +137,7 @@
             ]
         },
         {
-            "url": "http://remote3.com",
+            "url": "https://example.com",
             "tag": "Japan",
             "type": "ssr",
             "policies": [
@@ -140,7 +145,7 @@
             ]
         },
         {
-            "url": "http://remote4.com",
+            "url": "https://example.com",
             "tag": "Singapore",
             "type": "ssr",
             "policies": [
@@ -148,7 +153,7 @@
             ]
         },
         {
-            "url": "http://remote5.com",
+            "url": "https://example.com",
             "tag": "America",
             "type": "ssr",
             "policies": [

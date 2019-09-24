@@ -135,7 +135,7 @@ Example: [DEMO](https://github.com/0KABE/BeQX/blob/dev/demo.json)
     },
     "server_remote": [
         {
-            "url": "https://API.OKAB3.COM/filter?type=ssr&regex=%F0%9F%87%AD%F0%9F%87%B0&url=https%3A%2F%2FAPI.OKAB3.COM%2Femoji%3Ftype%3Dssr%26emoji%3Dhttps%3A%2F%2Fgist.githubusercontent.com%2F0KABE%2F7b88cfc4a94b4ea074aa509e15be117d%2Fraw%26url%3Dhttps%3A%2F%2Fsub.ssr.sh%2Flink%2FFdMu7sswP8Ho0Tbx%3Fmu%3D1",
+            "url": "https://example.com",
             "tag": "Hong_Kong",
             "type": "ssr",
             "policies": [
@@ -143,7 +143,7 @@ Example: [DEMO](https://github.com/0KABE/BeQX/blob/dev/demo.json)
             ]
         },
         {
-            "url": "https://API.OKAB3.COM/filter?type=ssr&regex=.%2A%28%E5%8F%B0%E6%B9%BE%7C%E5%8F%B0%E5%8C%97%7C%E5%8F%B0%E4%B8%AD%7C%E6%96%B0%E5%8C%97%7C%E5%BD%B0%E5%8C%96%29&url=https%3A%2F%2FAPI.OKAB3.COM%2Femoji%3Ftype%3Dssr%26emoji%3Dhttps%3A%2F%2Fgist.githubusercontent.com%2F0KABE%2F7b88cfc4a94b4ea074aa509e15be117d%2Fraw%26url%3Dhttps%3A%2F%2Fsub.ssr.sh%2Flink%2FFdMu7sswP8Ho0Tbx%3Fmu%3D1",
+            "url": "https://example.com",
             "tag": "Taiwan",
             "type": "ssr",
             "policies": [
@@ -151,7 +151,7 @@ Example: [DEMO](https://github.com/0KABE/BeQX/blob/dev/demo.json)
             ]
         },
         {
-            "url": "https://API.OKAB3.COM/filter?type=ssr&regex=%F0%9F%87%AF%F0%9F%87%B5&url=https%3A%2F%2FAPI.OKAB3.COM%2Femoji%3Ftype%3Dssr%26emoji%3Dhttps%3A%2F%2Fgist.githubusercontent.com%2F0KABE%2F7b88cfc4a94b4ea074aa509e15be117d%2Fraw%26url%3Dhttps%3A%2F%2Fsub.ssr.sh%2Flink%2FFdMu7sswP8Ho0Tbx%3Fmu%3D1",
+            "url": "https://example.com",
             "tag": "Japan",
             "type": "ssr",
             "policies": [
@@ -159,7 +159,7 @@ Example: [DEMO](https://github.com/0KABE/BeQX/blob/dev/demo.json)
             ]
         },
         {
-            "url": "https://API.OKAB3.COM/filter?type=ssr&regex=%F0%9F%87%B8%F0%9F%87%AC&url=https%3A%2F%2FAPI.OKAB3.COM%2Femoji%3Ftype%3Dssr%26emoji%3Dhttps%3A%2F%2Fgist.githubusercontent.com%2F0KABE%2F7b88cfc4a94b4ea074aa509e15be117d%2Fraw%26url%3Dhttps%3A%2F%2Fsub.ssr.sh%2Flink%2FFdMu7sswP8Ho0Tbx%3Fmu%3D1",
+            "url": "https://example.com",
             "tag": "Singapore",
             "type": "ssr",
             "policies": [
@@ -167,7 +167,7 @@ Example: [DEMO](https://github.com/0KABE/BeQX/blob/dev/demo.json)
             ]
         },
         {
-            "url": "https://API.OKAB3.COM/filter?type=ssr&regex=%F0%9F%87%BA%F0%9F%87%B8&url=https%3A%2F%2FAPI.OKAB3.COM%2Femoji%3Ftype%3Dssr%26emoji%3Dhttps%3A%2F%2Fgist.githubusercontent.com%2F0KABE%2F7b88cfc4a94b4ea074aa509e15be117d%2Fraw%26url%3Dhttps%3A%2F%2Fsub.ssr.sh%2Flink%2FFdMu7sswP8Ho0Tbx%3Fmu%3D1",
+            "url": "https://example.com",
             "tag": "America",
             "type": "ssr",
             "policies": [
