@@ -263,10 +263,8 @@ URL: <https://API.OKAB3.COM/json2clashr>
 
 如果有大佬愿意[提交](https://github.com/0KABE/BeQX/pulls)代码或更新README文档也十分欢迎一起维护。
 
-### 联系方式
+### Telegram
 
 [TG群组](https://t.me/OKAB3Script)
-
-### 频道
 
 [TG频道](https://t.me/OKAB3_Script_Channel)
