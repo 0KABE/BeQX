@@ -256,3 +256,17 @@ URL: <https://API.OKAB3.COM/json2clashr>
 | :------- | :--- | :----------- | :-----: |
 | url      | 是   | 源文件地址   |         |
 | filename | 否   | 返回的文件名 | qx.yml |
+
+## 维护
+
+使用中遇到了BUG？欢迎在[Issues](https://github.com/0KABE/BeQX/issues)中提交问题或留言，群里的反馈的BUG我可能会忘记。
+
+如果有大佬愿意[提交](https://github.com/0KABE/BeQX/pulls)代码或更新README文档也十分欢迎一起维护。
+
+### 联系方式
+
+[TG群组](https://t.me/OKAB3Script)
+
+### 频道
+
+[TG频道](https://t.me/OKAB3_Script_Channel)
