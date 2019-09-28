@@ -1,6 +1,8 @@
 steps:
 - name: 'gcr.io/cloud-builders/git'
-  args: ['submodule', 'init']
-- name: 'gcr.io/cloud-builders/git'
-  args: ['submodule', 'update']
-  
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |
+    git submodule init
+    git submodule update
