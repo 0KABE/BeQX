@@ -6,4 +6,5 @@ steps:
   - |
     git submodule init
     git submodule update
-    
+- name: gcr.io/cloud-builders/docker
+  args: ['run', 'gcr.io/$PROJECT_ID/myimage']
