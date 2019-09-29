@@ -156,7 +156,7 @@ def _ssr_node_to_dict(node: SSRNode) -> Dict[str, str]:
 
 
 def _quantumult_x_rule_to_str(rule: str, force_policy=None) -> str:
-    if re.match("^(#|>|$)", rule.lstrip()):
+    if re.match("^(#|>|//|$)", rule.lstrip()):
         return None
     split = rule.split(",", 2)
     if split[0].lower() == "user-agent":
