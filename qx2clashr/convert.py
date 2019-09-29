@@ -7,9 +7,10 @@ import requests
 import utils
 import yaml
 
-from sub_parser import ss_sub_parser, ssr_sub_parser
-from sub_parser.ss_sub_parser import SSNode
-from sub_parser.ssr_sub_parser import SSRNode
+from sub_parser import ss as ss_sub_parser
+from sub_parser import ssr as ssr_sub_parser
+from sub_parser.ss import SSNode
+from sub_parser.ssr import SSRNode
 
 built_in_policy = ["direct", "reject", "proxy"]
 

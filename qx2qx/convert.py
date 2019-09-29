@@ -4,10 +4,10 @@ from typing import Dict, List, Union
 
 import requests
 
-import sub_parser.ss_sub_parser as ss_sub_parser
-import sub_parser.ssr_sub_parser as ssr_sub_parser
-from sub_parser.ss_sub_parser import SSNode
-from sub_parser.ssr_sub_parser import SSRNode
+import sub_parser.ss as ss_sub_parser
+import sub_parser.ssr as ssr_sub_parser
+from sub_parser.ss import SSNode
+from sub_parser.ssr import SSRNode
 
 server_remote_options = ["tag", "enabled"]
 filter_remote_options = ["tag", "enabled", "force-policy"]
