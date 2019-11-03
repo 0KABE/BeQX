@@ -1,13 +1,16 @@
 import re
 import traceback
 
-from flask import Request, make_response
+from flask import Flask, Request, make_response, request
 
 import qx2clashr
 import qx2qx
 
+app = Flask(__name__)
 
-def to_qx(request: Request):
+
+@app.route('/json2qx', methods=['GET', 'POST'])
+def to_qx():
     try:
         url: str = request.args.get(qx2qx.RequestParm.URL.value)
         file_name: str = request.args.get(
@@ -20,7 +23,8 @@ def to_qx(request: Request):
         return traceback.format_exc()
 
 
-def to_clashr(request: Request):
+@app.route('/json2clashr', methods=['GET', 'POST'])
+def to_clashr():
     try:
         url: str = request.args.get(qx2clashr.RequestParm.URL.value)
         file_name: str = request.args.get(
@@ -31,3 +35,8 @@ def to_clashr(request: Request):
         return response
     except BaseException as e:
         return traceback.format_exc()
+
+
+if __name__ == '__main__':
+    app.debug = False
+    app.run(host='localhost', port=5000)

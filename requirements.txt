@@ -2,3 +2,5 @@ aiohttp
 pyyaml
 flask
 subscription-parser
+gunicorn
+supervisor
